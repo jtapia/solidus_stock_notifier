@@ -1,0 +1,24 @@
+es-MX:
+  spree:
+    activerecord:
+      attributes:
+        spree/stock_requests:
+          email: Email
+    models:
+      spree/stock_requests:
+        one: Solicitud de existencia
+        other: Solicitud de existencias
+    out_of_stock_product_requests: Solicitudes de productos agotados
+    stock_requests: Solicitud de existencias
+    stock_request: Solicitud de existencia
+    created_at: Creado
+    ago: hace
+    show_all: Mostrar todos
+    download: Descargar
+    variant: Variante
+    back_in_stock_subject: "¡Oye! %{product_name} está de nuevo en stock"
+    successful_stock_request: ¡Gracias! Le notificaremos tan pronto como el artículo esté nuevamente en stock.
+    stock_requests_description: 'Solicitudes de producto fuera de stock'
+    new_stock_request: Solicitar nueva notificación de stock
+    submit_stock_request: Enviar petición
+    requested: pedido

@@ -1,0 +1,5 @@
+<% if try_spree_current_user %>
+  <span class='stock-request'>
+    <%= link_to t('spree.stock_request'), spree.new_stock_request_path(variant_id: line_item.variant.id) %>
+  </span>
+<% end %>

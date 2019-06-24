@@ -1,0 +1,24 @@
+en:
+  spree:
+    activerecord:
+      attributes:
+        spree/stock_requests:
+          email: Email
+    models:
+      spree/stock_requests:
+        one: Stock Request
+        other: Stock Requests
+    out_of_stock_product_requests: Requests for out of stock products
+    stock_requests: Stock Requests
+    stock_request: Stock Request
+    created_at: Created
+    ago: ago
+    show_all: Show all
+    download: Download
+    variant: Variant
+    back_in_stock_subject: "Hey! %{product_name} is back in stock"
+    successful_stock_request: Thanks! we will notify you as soon as the item is back in stock
+    stock_requests_description: 'Out of stock product requests'
+    new_stock_request: Request New Stock Notification
+    submit_stock_request: Send Request
+    requested: requested

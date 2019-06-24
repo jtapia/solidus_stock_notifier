@@ -1,0 +1,38 @@
+<div class='col-md-6 col-md-offset-3'>
+  <div class='panel panel-default'>
+    <div class='panel-heading'>
+      <h3 class='panel-title'><%= t('spree.new_stock_request') %></h3>
+    </div>
+
+    <div class='panel-body'>
+      <%= render 'spree/shared/error_messages', target: @stock_request %>
+
+      <%= form_for @stock_request, html: { id: 'new_stock_request' } do |f| %>
+        <fieldset>
+          <div class='inner'>
+            <%= render partial: 'form', locals: { f: f } %>
+          </div>
+
+          <%= f.submit t('spree.save'), class: 'btn btn-primary' %>
+          <% if try_spree_current_user && respond_to?(:account_path) %>
+            <%= link_to t('spree.back_to_my_account'), spree.account_path, class: 'btn btn-primary' %>
+          <% end %>
+        </fieldset>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<% form_for(@stock_request) do |f| %>
+
+  <p>
+    <%= f.label :email %>
+    <% if try_spree_current_user %>
+      <%= try_spree_current_user.email %>
+    <% else %>
+      <%= f.text_field :email %>
+    <% end %>
+  </p>
+
+  <%= f.submit Spree.t(:submit_stock_request) %>
+<% end %>

@@ -1,0 +1,8 @@
+<div class='inner' data-hook='stock_request_inner'>
+  <div class='field' id='stock_request_label'>
+    <%= f.label :email %>
+    <%= f.text_field :email, class: 'required', autofocus: true, placeholder: t('spree.activerecord.attributes.spree/stock_requests.email'), value: try_spree_current_user&.email %>
+  </div>
+
+  <%= f.hidden_field :variant_id %>
+</div>
